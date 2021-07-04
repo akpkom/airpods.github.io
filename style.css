@@ -1,0 +1,143 @@
+
+/*Layout*/
+
+#main-doc {
+	
+	display: grid;
+	
+	grid-template-areas: 
+
+
+	"nav header"
+	"nav productimage "
+	"nav content"
+	;
+	
+	font-family: 'Roboto', sans-serif;
+	
+	grid-gap: 10%;
+	grid-template-columns: 30% 60%;
+
+}
+
+
+
+/*styling the header*/
+
+header {
+grid-area: header;
+
+
+}
+
+#header {
+background-color: grey;
+display: flex;
+justify-content: center;
+
+
+}
+
+#header img {
+	width:8%
+}
+
+#subtitle{
+	background-color: white;
+	border: 3px solid lightgray;
+	color: black;
+	font-size: 2rem;
+    position: sticky;
+    top: 0px;
+}
+
+#subtitle h2 {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+
+
+#product-image {
+display: flex;
+justify-content: center;
+grid-area: productimage;
+}
+
+
+
+
+#product-image img {
+	width: 40%;
+}
+
+#content {
+	grid-area: content;
+}
+
+
+/*Navbar*/
+
+#nav{
+	position: sticky;
+	top: 0px;
+}
+ #navbar{
+	grid-area: nav;
+	
+	
+}
+#main-doc nav {
+	
+	border: 1px solid black;
+
+}
+
+
+
+
+nav li{
+	font-family: 'Arial',sans-serif;
+	list-style: none;
+	font-size: 1.8rem;
+	color: black;
+}
+nav a {
+	color: inherit;
+}
+
+nav h2{
+	font-size: 2rem;
+}
+
+
+
+
+
+/*Section */
+
+
+section ul{
+list-style: none;
+font-family: 'Arial',sans-serif;
+font-size: 2.5rem;
+
+}
+
+section h2 {
+	font-size: 2rem;
+}
+
+.main-section{
+	display: flex;
+	border: 2px solid grey;
+	border-left: 0px;
+	border-right: 0px;
+
+}
+
+section h2{
+	font-family: 'Roboto', sans-serif;
+}
+
